@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1199px) {
   #header {
-    left: -300px;
+    left: -375px;
   }
   #main {
     margin-left: 0;
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #149ddd;
+  color: #329A51;
 }
 
 .mobile-nav-active {
@@ -253,21 +253,12 @@ h1, h2, h3, h4, h5, h6 {
 #hero .hero-container {
   position: relative;
   margin-left: 20%;
-  width: 1000px;
+  width: 1025px;
   z-index: 2;
   background-color: #fff;
   border-radius: 10px;
-  padding: 30px 5px 20px 45px;
-}
-
-#hero .hero-container {
-  position: relative;
-  margin-left: 17%;
-  width: 1000px;
-  z-index: 2;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 30px 5px 20px 45px;
+  padding: 0px 30px 40px 55px;
+  transition: background-color 600ms;
 }
 
 #hero h1 {
@@ -275,18 +266,38 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   line-height: 75px;
   color: #2B6CB6;
+  transition: color 600ms;
 }
 
 #hero h3 {
-  margin: 0 0 10px 0;
+  margin: 20px 0;
   font-size: 35px;
-  color: #a8a9b4;
+  color: #858585;
+  transition: color 600ms;
 }
 
 #hero p {
   color: #fff;
   font-size: 45px;
   font-family: 'Exo', sans-serif;
+  transition: color 600ms;
+}
+
+#hero .hero-container:hover{
+  cursor: pointer;
+  background-color: #040b14;
+}
+
+#hero .hero-container:hover #mobile-title {
+  color: #e6ae5c;
+}
+
+#hero .hero-container:hover h1{
+  color: #edaf53;
+}
+
+#hero .hero-container:hover h3{
+  color: #fff;
 }
 
 #hero p span {
@@ -298,21 +309,123 @@ h1, h2, h3, h4, h5, h6 {
   /* border-bottom: 4px solid #3CB961; */
 }
 
+#hero #mobile-title {
+  visibility: hidden;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
   }
+  .mobile-nav-toggle i {
+    font-size: 1.8em;
+    color: #329A51;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mobile-nav-toggle i {
+    font-size: 1.8em;
+    color: #329A51;
+  }
+  #hero .hero-container {
+    /* margin-left: 20%; */
+    margin-left: 0%;
+    padding: 30px 10px 20px 10px;
+    width: 600px;
+    /* box-shadow: 5px 5px #040b14; */
+  }
+  #hero #mobile-title {
+    transition: color 300ms;
+    visibility: visible;
+    font-size: 90px;
+    font-weight: 900;
+    -moz-text-align-last: center;
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+    line-height: 65px;
+    color: #edaf53;
+    letter-spacing: 1px;
+  }
+  #hero h1 {
+    transition: color 600ms;
+    text-align: center;
+    font-size: 45px;
+    line-height: 45px;
+    margin: 20px;
+  }
+  #hero h3 {
+    transition: color 600ms;
+    text-align: center;
+    margin: 0 60px 20px 60px;
+    font-size: 25px;
+    color: #858585;
+  }
+  #hero p {
+    transition: color 600ms;
+    text-align: center;
+    font-size: 35px;
+  }
+  #hero .hero-container:hover{
+    cursor: pointer;
+    background-color: #040b14;
+  }
+  #hero .hero-container:hover #mobile-title {
+    color: #e6ae5c;
+  }
+  #hero .hero-container:hover h1{
+    color: #fff;
+  }
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+  #hero .hero-container {
+    /* margin-left: 20%; */
+    margin-left: 0%;
+    padding: 30px 10px 20px 10px;
+    width: 400px;
+    /* box-shadow: 5px 5px #040b14; */
   }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+  #hero #mobile-title {
+    transition: color 300ms;
+    visibility: visible;
+    font-size: 70px;
+    font-weight: 900;
+    -moz-text-align-last: center;
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+    line-height: 55px;
+    color: #edaf53;
+    letter-spacing: 1px;
+  }
+  #hero h1 {
+    transition: color 600ms;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 20px;
+  }
+  #hero h3 {
+    transition: color 600ms;
+    text-align: center;
+    margin: 0 30px 20px 30px;
+    font-size: 20px;
+    color: #858585;
+  }
+  #hero p {
+    transition: color 600ms;
+    text-align: center;
+    font-size: 35px;
+  }
+  #hero .hero-container:hover{
+    cursor: pointer;
+    background-color: #040b14;
+  }
+  #hero .hero-container:hover #mobile-title {
+    color: #e6ae5c;
+  }
+  #hero .hero-container:hover h1{
+    color: #fff;
   }
 }
 
@@ -320,7 +433,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 40px 0 0px 60px;
+  padding: 40px 40px 0px 40px;
   overflow: hidden;
 }
 
@@ -367,6 +480,7 @@ section {
 
 .about .row {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .about .content h3 {
@@ -400,7 +514,6 @@ section {
 }
 
 .about img {
-  margin-top: 20px;
   border-radius: 5px;
   width: 350px;
   height: 350px;
@@ -598,6 +711,7 @@ section {
 }
 
 .portfolio .portfolio-wrap img{
+  width: 400px;
   height: 250px;
 }
 
